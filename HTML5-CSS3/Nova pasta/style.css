@@ -1,0 +1,32 @@
+@charset "UFT-8";
+body{
+    background-color: rgb(36, 108, 241);
+}
+.box{
+    background-color: rgb(197, 38, 38);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0px -10px 0px -10px;
+    border-radius: 10px;
+    
+}
+
+article{
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+p{
+    text-align: justify;
+    font-size: 0.5cm 15pt;
+}
+.ar{
+    flex-flow: column-reverse;
+}
+nav{
+    background-color: lightblue;
+    border-radius: 10px;
+    
+}

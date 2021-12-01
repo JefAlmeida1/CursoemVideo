@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            background-color: slategrey;
+            
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criação de sistema de país</h1>
+    <p>Criando um site onde vai verificar se é estrangeiro ou não.</p>
+    <p>Abaixo você vai colocar o nome do seu país para verificar se é ou não estrangeiro.</p>
+    Onde voce mora? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+
+        var txtm = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var pais = String(txtm.value)
+        //console.log(`Vivendo em ${pais}`)
+        if (pais == 'Brasil'){
+            res.innerHTML = "<p>Voce é Brasileiro!</p>"
+            //console.log('Você é Brasileiro!')
+        }else{
+        res.innerHTML = "<p>Você é estrangeiro!</p>"
+        } 
+        }
+    </script>
+</body>
+</html>

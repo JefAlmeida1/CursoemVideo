@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+src: url("idroid.otf") format("opentype");
+}
+
+:root{
+    --cor0: #193000;
+    --cor1: #48b451;
+    --cor2: #75d619ee;
+    --cor3: #8DA736;
+    --cor4: #27A603;
+    --cor5: #5DD904;
+    --cor6: #95EB78;
+    
+}
+body{
+   background-color: var(--cor5);
+}
+p {
+    margin: 15px 0px;
+    text-align: justify;
+
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    background-color: rgba(98, 226, 98, 0.445);
+}
+header{
+    background-color: #078C03;
+    padding: 0px;
+    margin: 0px;
+
+}
+h1 {
+    text-align: center;
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: forestgreen;
+    margin: auto;
+
+}
+h1#principal{
+    color: white;
+    
+    
+}
+.seg{
+    text-align: center;
+    color:rgb(250, 250, 250);
+}
+h2 {
+    font-family:'idroid', Arial, Helvetica, sans-serif; 
+    color: forestgreen;
+    font-size: 1.2em;
+    background-image: repeating-linear-gradient(to right, var(--cor1), transparent);
+
+}
+h3 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: forestgreen;
+}
+
+main{
+    min-width: 380px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 0px 10px rgba(0, 0, 0, 0.363);
+
+}
+
+main img {
+ width: 100%;
+}
+aside {
+    background-color: rgba(120, 223, 120, 0.425);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > ul {
+    list-style-type: "\2714\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+aside > h3 {
+    background-color: rgba(32, 238, 77, 0.644);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+nav {
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow:0px 7px 9px black;
+}
+nav > a {
+    color: rgb(224, 250, 234);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+
+footer{
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    background-color: rgba(6, 143, 40, 0.623);
+    color: white;
+}
+div.video{
+    background-color: var(--cor0);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
